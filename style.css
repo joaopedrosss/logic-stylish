@@ -1,0 +1,18 @@
+body{
+    background:#353737;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+p{
+    text-align: center;
+    color: white;
+}
+em{
+    font-size:20px;
+}
+em strong{
+    color:#bcbec7
+}

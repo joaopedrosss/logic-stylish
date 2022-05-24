@@ -8,22 +8,45 @@
  
     </head>
     <body>
-        <h1>Sobre a Barbearia Alura</h1>
-
-        <div class="text-wrap">
-
+        
+        <img id="banner" src="/static/banner.jpg" alt="barber-shop-image">
+       
+    
+        <div class="principal">
+            <h1 class="title">Sobre a Barbearia Alura</h1>
+            
             <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
 
-            <p><em>Nossa missão é:<strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+            <p><em id="duty">Nossa missão é:<strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
 
             <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
         </div>
-        
-        <button>Reveal the paragraphs</button>
+
+        <div class="benefits">
+            <h2>Benefícios</h2>
+
+            <ul> 
+                <li class="item">Atendimento especializado</li>
+                <li class="item">Espaço relaxante</li>
+                <li class="item">Ampla variedade de cortes</li>
+                <li class="item">Serviço completo (barba, cabelo, massagem de escapula)</li>
+            </ul>
+
+            <img id="benefits-image" src="/static/beneficios.jpg" alt="benefits">
+            </div>
+        </div>
+
+        <div class="button-wrap">
+            <button>Reveal the paragraphs</button>
+            <button id="darkButton">Turn on Dark Mode</button>
+        </div>
         
         <script>
             var button = document.querySelector("button")
             button.onclick = revealParags;
+
+            var darkButton = document.getElementById("darkButton");
+            darkButton.onclick = turnDark;
 
             function revealParags(){
                 var parags = document.querySelectorAll("p");
@@ -42,6 +65,20 @@
                     parags[0].class="reveal";
                     document.querySelector("button").innerHTML = "Hide the paragraphs";
                 }
+            }
+            
+            function turnDark(){ 
+                var body = document.querySelector("body");
+                if(body.class == "light"){
+                    body.style= "background: #ffffff";
+                    body.class = "dark";
+                    document.getElementById("darkButton").innerHTML = "Turn on Dark Mode";
+                } else{
+                    body.style = "background: #000000";
+                    body.class = "light";
+                    document.getElementById("darkButton").innerHTML = "Turn off Dark Mode";
+                }
+                
             }
         </script>
     </body>

@@ -3,20 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="static/barbershop-icon.png">
+
+    <link rel="stylesheet" href="reset.css"> <!--sempre primeiro-->
     <link rel="stylesheet" href="produtos.css">
+    
     <title>Produtos</title>
 </head>
 <body>
     <header>
-        <h1><img src="static/logo.png" alt="barbershop-logo"></h1>
+        <div class="header-conteiner">
+            <h1><img src="static/logo.png" alt="barbershop-logo"></h1>
 
-        <ul>
-            <li>Home</li>
-            <li>Produtos</li>
-            <li>Contato</li>
-        </ul>
-        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <main>
+        <ul class="products">
+            <li>
+                <h2>Cabelo</h2>
+                <img src="static/cabelo.jpg" alt="cabelo">
+                <p class="descr">Na tesoura ou máquina, como o cliente preferir.</p>
+                <p class="price">R$25,00</p>
+            </li>
+            <li>
+                <h2>Barba</h2>
+                <img src="static/barba.jpg" alt="barba">
+                <p class="descr">Corte e desenho profissional de barba.</p>
+                <p class="price">R$18,00</p>
+            </li>
+            <li>
+                <h2>Cabelo + Barba</h2>
+                <img src="static/cabelo+barba.jpg" alt="cabelo+barba">
+                <p class="descr">Pacote completo de cabelo e barba.</p>
+                <p class="price">R$35,00</p>
+
+            </li>
+        </ul>
+    </main>
     
 </body>
 </html>

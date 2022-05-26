@@ -1,0 +1,50 @@
+/*Menu - cabeçalho*/
+
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+
+}
+.header-conteiner{
+    width:940px; /*padrão na internet, pois assim você tem bastante margem*/
+    position:relative;
+    margin:0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0em;
+}
+
+nav li{
+    display: inline;
+    margin:0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase; /*falta de etiqueta usar textos diretamente me maiusculo*/
+    color: #000000;
+    font-weight:bold;
+    font-size:22px;
+    text-decoration:none;
+}
+
+.products{
+    
+}
+
+.products li{ /*main*/
+    
+}
+
+.products h2{
+    
+}
+
+.descr{
+}
+
+ .price{
+     
+ }

@@ -9,7 +9,7 @@ body{
     background:#bcbec7;
     font-weight: bold;
     padding:1em;
-    border-radius:25px;
+    border-radius: 5px;
     padding: 20px;
 }
 
@@ -18,10 +18,11 @@ body{
     height: 285px;
     border-radius: 5px;
 }
-
-h1{
+.title-main{
+    padding-left:20px;
+}
+.title-center{
     text-align: center;
-    
 }
 
 p{
@@ -40,11 +41,10 @@ em strong{
     background: white;
     color:#353737;
     padding: 20px;
+    padding: 20px 0px 20px 0px;
 }
 
-h2{
-    text-align: center;
-}
+
 ul{
     display:inline-block;
     vertical-align: top;
@@ -62,4 +62,5 @@ ul{
     width: 50%;
     height: 334px;
     border-radius: 5px;
+    margin-left: 19px;
 }

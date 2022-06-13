@@ -31,20 +31,35 @@ nav a{
 }
 
 .products{
-    
+    width:940px;
+    margin:0 auto;
+    padding: 50px 0;
 }
 
 .products li{ /*main*/
-    
+    display: inline-block;
+    text-align:center;
+    width:30%;
+    vertical-align: top;
+
+    margin:0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+
+    border: 2px solid #000000;
+    border-radius: 10px;
 }
 
 .products h2{
-    
+    font-size: 30px;
+    font-weight: bold;
+}
+.product-descrip{
+    font-size: 19px;
 }
 
-.descr{
-}
-
- .price{
-     
+.product-price{
+     font-size:22px;
+     font-weight: bold;
+     margin-top:10px;
  }

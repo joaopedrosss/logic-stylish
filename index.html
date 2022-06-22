@@ -4,81 +4,77 @@
         <meta charset="UTF-8">
         <title>Alura Barbearia</title> 
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="index.css">
+        
  
     </head>
     <body>
-        <img id="banner" src="static/banner.jpg" alt="barber-shop-image">
-       
-    
-        <div class="principal">
-            <h1 class="title">Sobre a Barbearia Alura</h1>
-            
-            <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+        <header>
+            <div class="header-conteiner">
+                <h1><img src="static/logo.png" alt="logo"></h1>
 
-            <p><em id="duty">Nossa missão é:<strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
-
-            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-        </div>
-
-        <div class="benefits">
-            <h3 class="title-center">Benefícios</h3>
-
-            <ul> 
-                <li class="item">Atendimento especializado</li>
-                <li class="item">Espaço relaxante</li>
-                <li class="item">Ampla variedade de cortes</li>
-                <li class="item">Serviço completo (barba, cabelo, massagem de escapula)</li>
-            </ul>
-
-            <img id="benefits-image" src="static/beneficios.jpg" alt="benefits">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="produtos.html">produtos</a></li>
+                        <li><a href="#">contato</a></li>
+                    </ul>
+                </nav>
             </div>
+        </header>
+
+        <div class="banner-wrap">
+            <img src="static/banner.jpg" alt="barber-shop-image">
+        </div>
+        
+       
+        <div class="principal-message">
+            <h1 class="principal-title">Sobre a Barbearia Alura</h1>
+            
+            <p>
+                Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.
+            </p>
+
+            <p>
+                <em class="principal-mission">Nossa missão é:<strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em>
+            </p>
+
+            <p>
+                Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.
+
+            </p>
         </div>
 
-        <div class="button-wrap">
+        <div class="benefits-wrap">
+            <div class="benefits-text-wrap">
+                <h3  class="benefits-title">Benefícios</h3>
+
+                <ul class="benefits-list"> 
+                    <li class="item">Atendimento especializado</li>
+                    <li class="item">Espaço relaxante</li>
+                    <li class="item">Ampla variedade de cortes</li>
+                    <li class="item">Serviço completo (barba, cabelo, massagem de escapula)</li>
+                    <li class="item">Sala de Jogos</li>
+                </ul>
+            </div>
+            <img class="benefits-image" src="static/beneficios.jpg" alt="benefits">           
+
+        </div>
+
+        <footer>
+            <img src="static/logo-branco.png" alt="logo branco">
+            <p class="copyright">&copy;Copyright - Barbearia Alura 2022 </p>
+        </footer>
+        
+   
+        <!--
+            <div class="button-wrap">
             <button>Reveal the paragraphs</button>
             <button id="darkButton">Turn on Dark Mode</button>
         </div>
-        
-        <script>
-            var button = document.querySelector("button")
-            button.onclick = revealParags;
-
-            var darkButton = document.getElementById("darkButton");
-            darkButton.onclick = turnDark;
-
-            function revealParags(){
-                var parags = document.querySelectorAll("p");
-                if(parags[0].class=="reveal"){
-                    for(var i =0;i<parags.length; i++){
-                        parags[i].style=""
-                    }
-
-                    parags[0].class="";
-                    document.querySelector("button").innerHTML = "Reveal the paragraphs";
-                } else{
-                    for(var i =0;i<parags.length; i++){
-                        parags[i].style="border:solid white 1px"
-                    }
-
-                    parags[0].class="reveal";
-                    document.querySelector("button").innerHTML = "Hide the paragraphs";
-                }
-            }
-            
-            function turnDark(){ 
-                var body = document.querySelector("body");
-                if(body.class == "light"){
-                    body.style= "background: #ffffff";
-                    body.class = "dark";
-                    document.getElementById("darkButton").innerHTML = "Turn on Dark Mode";
-                } else{
-                    body.style = "background: #000000";
-                    body.class = "light";
-                    document.getElementById("darkButton").innerHTML = "Turn off Dark Mode";
-                }
-                
-            }
+        -->
+        <script src="index.js">
         </script>
     </body>
 </html>

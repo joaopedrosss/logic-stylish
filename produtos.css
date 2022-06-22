@@ -1,4 +1,4 @@
-/*Menu - cabeçalho*/
+/*header*/
 
 header{
     background: #BBBBBB;
@@ -35,6 +35,7 @@ nav a:hover{
     text-decoration:underline;
 }
 
+/* products cards */
 .products{
     width:940px;
     margin:0 auto;
@@ -81,6 +82,7 @@ nav a:hover{
      margin-top:10px;
  }
 
+ /*footer*/
  footer{
     background: url("static/bg.jpg");
     text-align: center;

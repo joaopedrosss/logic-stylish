@@ -1,0 +1,151 @@
+/*header*/
+header{
+    background:#BBBBBB;
+    padding: 20px 0;
+}
+
+.header-conteiner{
+    width:940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+nav li{
+    display: inline;
+    margin:0 0 0 15px;
+}
+
+.header-conteiner a{
+    color: #000000;
+    font-size: 22px;
+    font-weight:bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:#C78C19;
+    text-decoration:underline;
+}
+
+/*banner*/
+
+.banner-wrap{
+    width: 940px;
+    margin: 0 auto;
+    padding:10px 0;
+}
+
+.banner-wrap img{
+    width: 930px;
+    height: 285px;
+    border-radius: 5px;
+    border: 5px solid #BBBBBB;
+    }
+
+/*main message*/
+.principal-message{
+    width: 940px;
+    margin: 0 auto;    
+    background:#BBBBBB;
+    padding: 2em;
+    box-sizing: border-box;
+    
+    font-size: 20px;
+    border-radius: 5px;
+
+    font-family:Tahoma, sans-serif;;
+
+    
+}
+
+.principal-title{
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom:10px;
+
+}
+
+.principal-message p{
+    text-align: justify; 
+    margin-bottom: 10px;
+}
+.principal-mission{
+    
+}
+em strong{
+    font-weight: bold;
+    color: #191919;
+}
+
+/*benefits*/
+.benefits-wrap{
+    width:940px;
+    margin:15px auto;
+    background:#BBBBBB;
+
+    padding:2em;
+    box-sizing: border-box;
+
+    font-size: 20px;
+    border-radius: 5px;
+
+    font-family:Tahoma, sans-serif;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits-text-wrap{
+    display: inline-block;
+    width: 50%;
+    margin-right:20px;
+    
+}
+
+.benefits-title{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom:10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.benefits-list{
+    
+}
+
+.item{
+    font-style: italic;
+    text-align: justify;
+    padding-bottom:20px;
+
+    list-style-type: circle;
+}
+
+.benefits-image{
+    width:50%;
+    display: inline-block;
+
+}
+
+/*footer*/
+
+footer{
+    background: url("static/bg.jpg");
+    text-align: center;
+    padding:40px;
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px;
+}

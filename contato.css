@@ -34,17 +34,47 @@ header{
     text-decoration: underline;
 }
 
-/*form
+/*form*/
 
 main{
-    padding:20px;
-    text-align: center;
+   padding: 40px 0;
+   
 }
 
 .form-wrap{
     width:940px;
-    display: inline-block;
-}*/
+    margin: 0 auto;
+    
+}
+
+.form-wrap label{
+    display: block;
+    font-size:22px;
+    padding:5px 0px;
+    
+}
+
+.form-input{   
+    display: block; 
+    width: 50%;
+    height: 22px;
+    
+    padding:10px 25px;
+    margin:0 0 20px 0;
+
+    font-size:18px;
+    
+} 
+
+.form-button{
+    width:10em;
+    
+    padding:5px;
+    margin: 10px 0px;
+
+    font-size:16px;
+
+}
 
 /* footer */
 

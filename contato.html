@@ -22,6 +22,7 @@
 
     <main>
         <form class="form-wrap">
+        
             <label for ="nome-sobrenome">Nome e sobrenome</label>
             <input class="form-input" type="text" id="nome-sobrenome">
 
@@ -30,6 +31,30 @@
 
             <label for="phone">Telefone</label>
             <input class="form-input" placeholder="(xx) xxxx-xxxx" type="text" id="phone">
+
+            <label for="message">Messagem</label>
+            <textarea id="message" cols="70" rows="10"></textarea>
+        
+
+            <div class="form-contact">
+                <p>Como prefere nosso contato?</p>
+                <label for="email-radio"><input type="radio" id="email-radio" value="email" name="contato">Email</label>
+                
+                <label for="telefone-radio"><input type="radio" id="telefone-radio" value="telefone" name="contato">Ligação</label>
+                
+                <label for="zap-radio"><input type="radio" id="zap-radio" value="zap" name="contato">WhatsApp</label>
+            </div>
+            
+            <label for="horarios">Em qual horário prefere ser atendido?</label>
+            <select id="horarios">
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+
+            <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+            
+            
 
             <input class="form-button" type="submit" value="Enviar formulário">
         </form>

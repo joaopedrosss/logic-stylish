@@ -47,9 +47,9 @@ main{
     
 }
 
-.form-wrap label, .form-wrap p{
+.form-wrap label, .form-wrap legend{
     display: block;
-    font-size:22px;
+    font-size:20px;
     padding:5px 0px;
     
 }
@@ -71,7 +71,7 @@ main{
 }
 
 .form-contact label{
-    font-size:20px;
+    
     padding:5px;
 }
 
@@ -89,14 +89,38 @@ main{
 }
 
 .form-button{
-    display: block; 
-    width:10em;
+    display: block;
+    width: 40%;
     
-    padding:5px;
+
+    padding: 15px 5px;
     margin: 10px 0px;
+    
+    font-size: 18px;
+    font-weight: bold;
 
-    font-size:16px;
+    border:none;
+    color: white;
+    background:orange;
+    cursor: pointer;
+    border-radius: 5px;
 
+    transition:all 1s;
+}
+
+.form-button:hover{
+    background:darkorange;
+    transform: scale(1.02) ;
+    
+}
+
+.open-days{
+    margin: 1em 0px 2em;
+}
+
+.open-days td,th{
+    border: 1px solid black;
+    padding:10px;
 }
 
 /* footer */

@@ -114,14 +114,26 @@ main{
     
 }
 
-.open-days{
-    margin: 1em 0px 2em;
+.days-table{
+    margin: 20px 0px;
 }
 
-.open-days td,th{
-    border: 1px solid black;
-    padding:10px;
+thead{
+    background: #6f6e6e;
+    font-weight: bold;
+    color: #ffffff
 }
+
+.days-table tr:nth-child(even){
+    background: #bfbebe;
+}
+
+.days-table td,th{
+    border: 1px solid black;
+    padding:8px 15px;
+}
+
+
 
 /* footer */
 

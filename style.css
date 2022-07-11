@@ -27,18 +27,20 @@ header{
     font-weight:bold;
     font-size:22px;
     color: #000000;
+    transition: 0.5s all ;
 }
 
 .nav-links a:hover{
-    color:#C78C19;
+    color:#ffffff;
     text-decoration: underline;
 }
 
+/*CSS contato.html*/
+
 /*form*/
 
-main{
-   padding: 40px 0;
-   
+.main-form{
+   padding: 40px 0; 
 }
 
 .form-wrap{
@@ -147,4 +149,44 @@ footer p{
     font-size:13px;
     color:#ffffffff;
     margin-top: 20px;
+}
+
+/*Index.html CSS*/
+
+.banner-wrap{
+    width:100%;
+}
+
+.main-content{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.main-title{
+    text-align: center;
+    font-size: 2em;
+    margin:0 0 1em;
+    clear:left; 
+}
+
+.ultensilio{
+    width:120px;
+    float:left;
+    margin: 0 20px 20px 0;
+}
+
+.main-block p{
+    margin:0 0 1em;
+}
+
+.main-block strong{
+    font-weight: bold;
+}
+
+.main-block em{
+    font-style: italic;
+}
+
+.benefits-image{
+    width:60%;
 }

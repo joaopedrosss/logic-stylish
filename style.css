@@ -159,6 +159,7 @@ footer p{
 
 .image-wrap{
     width:100%;
+    margin: 0 0 1em;
 }
 
 .main-content{
@@ -169,7 +170,7 @@ footer p{
 .main-title{
     text-align: center;
     font-size: 2em;
-    margin:0 0 1em;
+    margin: 0em 0 1em;
     clear:left; 
 }
 
@@ -206,11 +207,29 @@ footer p{
     height: 300px;
 }
 
+.benefits-wrap{
+    width:640px;
+    margin:0 auto;
+    padding: 2em 0;
+}
+.benefits-list{
+    width:40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.item{
+    line-height: 1.5;
+}
+
+.item:nth-child(1){
+    font-weight: bold;
+}
+
 .benefits-image{
     width:60%;
 }
 
 .video{
-    margin: 1em auto;
+    margin: 2em auto;
     width:560px;
 }

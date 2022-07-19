@@ -158,13 +158,11 @@ footer p{
 /*Index.html CSS*/
 
 .image-wrap{
-    width:100%;
-    margin: 0 0 1em;
+    background:#fefefe;/* pequeno truque para resolver o espaço entre a tag 'img' e a tag 'main' da página - ponha em 0000ff pra ver*/
 }
-
-.main-content{
-    width: 940px;
-    margin: 0 auto;
+.image-banner{
+    width:100%;
+    margin: 0 0 0em;
 }
 
 .main-title{
@@ -174,32 +172,60 @@ footer p{
     clear:left; 
 }
 
+/*.main-title:first-letter{
+    font-weight:bold;
+}
+
+.main-title:before{
+    content:"[ ";
+}
+
+.main-title:after{
+    content:" ]";
+}*/
+
+.about-wrap{
+    background:#fefefe;/*fefefe*/ 
+}
+
+.about-content{
+    width:940px;
+    padding:3em 0;
+    margin:0 auto;
+}
+
+.about-wrap p{
+    margin:0 0 1em;
+}
+
 .ultensilio{
     width:120px;
     float:left;
     margin: 0 20px 20px 0;
 }
 
-.main-block p{
-    margin:0 0 1em;
-}
-
-.main-block strong{
+.about-wrap strong{
     font-weight: bold;
 }
 
-.main-block em{
+.about-wrap em{
     font-style: italic;
 }
 
 .map{
     padding: 3em 0;
     text-align: center;
+    background:linear-gradient(#fefefe,#888888);
+    
 }
 
 .map p{
     margin: 0 0 2em;
     
+}
+.map-content{
+    width: 940px;
+    margin: 0 auto;
 }
 
 .map iframe {
@@ -207,10 +233,15 @@ footer p{
     height: 300px;
 }
 
+
 .benefits-wrap{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.benefits-content{
     width:640px;
     margin:0 auto;
-    padding: 2em 0;
 }
 .benefits-list{
     width:40%;
@@ -225,6 +256,10 @@ footer p{
     font-weight: bold;
 }
 
+.item:before{
+    content:"\2605";
+}
+
 .benefits-image{
     width:60%;
 }
@@ -233,3 +268,24 @@ footer p{
     margin: 2em auto;
     width:560px;
 }
+main:after{
+    
+}
+
+/*
+/*advaced selectors
+main > p{ /*selecione todas as tags P que são filhas diretas de main
+    color:red;
+}
+
+img ~ p{ /*selecione todas as tags p que vem depois de img que nõa são filhas de ninguem 
+    color:blue;
+}
+
+img+p{/*selecione o primeiro p que vem depois de img 
+    color:green;
+}
+
+.about-wrap p:not(#mission) {
+    color: purple;
+}*/

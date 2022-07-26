@@ -170,9 +170,11 @@ footer p{
     font-size: 2em;
     margin: 0em 0 1em;
     clear:left; 
+    
 }
 
-/*.main-title:first-letter{
+/*
+.main-title:first-letter{
     font-weight:bold;
 }
 
@@ -262,15 +264,20 @@ footer p{
 
 .benefits-image{
     width:60%;
+    opacity: 1;
+    transition:opacity 400ms;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
+}
+
+.benefits-image:hover{
+    opacity: 0.3;
 }
 
 .video{
     margin: 2em auto;
     width:560px;
 }
-main:after{
-    
-}
+
 
 /*
 /*advaced selectors
@@ -289,3 +296,30 @@ img+p{/*selecione o primeiro p que vem depois de img
 .about-wrap p:not(#mission) {
     color: purple;
 }*/
+
+@media screen and (max-width: 480px){
+    .header-wrap, .about-content, .map-content,.video, .benefits-content{
+        width:auto;
+    }
+
+    .video-iframe{
+        width:100%;
+    }
+
+    .header-wrap h1{
+        text-align: center;
+    }
+    .nav-links{
+        position: static;
+    }
+    .nav-links a{
+        font-size: 16px;
+    }
+
+    .about-wrap p {
+        margin: 0 1em 1em;
+    }
+    .benefits-list, .benefits-image{
+        width:100%;
+    }
+}

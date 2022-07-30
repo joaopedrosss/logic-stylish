@@ -4,7 +4,7 @@ body{
 
 /* header */
 header{
-    background: #bbbbbb;
+    background: #c0c0c0;
     padding:20px;
 }
 
@@ -30,7 +30,7 @@ header{
     text-transform: uppercase;
     font-weight:bold;
     font-size:22px;
-    color: #000000;
+    color: #222222;
     transition: 0.5s all ;
 }
 
@@ -297,15 +297,10 @@ img+p{/*selecione o primeiro p que vem depois de img
     color: purple;
 }*/
 
-@media screen and (max-width: 480px){
-    .header-wrap, .about-content, .map-content,.video, .benefits-content{
+@media screen and (max-width: 500px){
+    .header-wrap, .about-content, .map-content,.video,.benefits-content{
         width:auto;
     }
-
-    .video-iframe{
-        width:100%;
-    }
-
     .header-wrap h1{
         text-align: center;
     }
@@ -316,10 +311,29 @@ img+p{/*selecione o primeiro p que vem depois de img
         font-size: 16px;
     }
 
+    .about-content img{
+        display:none;
+    }
+
+    .map{ 
+        padding: 1em 0;
+    }
+    .map p {
+        margin: 0 0.5em 1em;
+    }
     .about-wrap p {
         margin: 0 1em 1em;
     }
+    .benefits-content img{
+        margin-top: 1em;
+    }
     .benefits-list, .benefits-image{
+        width:100%;     
+    }
+    .benefits-list li{
+        margin: 0 0 0 1em;
+    }
+    .video-iframe{
         width:100%;
     }
 }

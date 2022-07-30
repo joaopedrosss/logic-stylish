@@ -4,39 +4,40 @@ body{
 /*header*/
 
 header{
-    background: #BBBBBB;
+    background: #c0c0c0;
     padding: 20px 0;
 
 }
-.header-conteiner{
-    width:940px; /*padrão na internet, pois assim você tem bastante margem*/
-    position:relative;
-    margin:0 auto;
+.header-wrap{
+    width:940px;
+    margin: 0 auto;
+    position: relative;
 }
 
-nav{
+.nav-links{
     position: absolute;
-    top: 110px;
-    right: 0em;
+    top:110px;
+    right:0px;
+
 }
 
-nav li{
-    display: inline;
+.nav-links li{
+    display:inline;
     margin:0 0 0 15px;
 }
 
-nav a{
-    text-transform: uppercase; /*falta de etiqueta usar textos diretamente me maiusculo*/
-    color: #000000;
+.nav-links a{
+    text-decoration:none;
+    text-transform: uppercase;
     font-weight:bold;
     font-size:22px;
-    text-decoration:none;
+    color: #222222;
     transition: 0.5s all ;
 }
 
-nav a:hover{
-    color:#ffffff;
-    text-decoration:underline;
+.nav-links a:hover{
+    color:#FFFFFF;
+    text-decoration: underline;
 }
 
 /* products cards */
@@ -97,4 +98,30 @@ nav a:hover{
     color:#FFFFFF;
     font-size:13px;
     margin-top:20px;
+ }
+
+ @media screen and (max-width:500px){
+    .header-wrap, .products{
+        width:auto;
+    }
+
+    .header-wrap h1{
+        text-align: center;
+    }
+    .nav-links{
+        position: static;
+    }
+    .nav-links a{
+        font-size: 16px;
+    }
+
+    .products li{
+        display: block;
+        width:80%;
+        margin:0em auto 2em;
+
+    }
+    .products img{
+        width:70%
+    }
  }
